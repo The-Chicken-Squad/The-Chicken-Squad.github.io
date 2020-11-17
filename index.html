@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>The Chicken Club Website</title>
+        <title id="clicker">The Chicken Club Website</title>
         <style>
            h1{
                color: #0014ff;
@@ -48,5 +48,15 @@ Height: 20%;
     Avert<br><br>
       </h3></div>
 <div id="Save"><p>Make the world a better place! Collect litter and use less greenhouse gasses. Please help save the world.<br> The world is important, save it!!!</p></div>
+        <script>
+             var clickerButton = document.getElementById("clicker");
+    // 2. Define the function that will respond to the event.
+    // callback 
+    var onButtonClick = function() {
+        clickerButton.textContent = "Chicken Club Rocks!";
+    };
+    // 3. Add the event listener for the element and function
+    clickerButton.addEventListener("click", onButtonClick);
+        </script>
     </body>
 </html>
